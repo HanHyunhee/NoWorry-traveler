@@ -13,7 +13,7 @@ create table accomodation(
 accnum number(3) primary key,
 accid varchar2(20) not null,
 accwriter varchar2(20) not null,
-acctitle varchar2(20) not null,
+acctitle varchar2(80) not null,
 acccontents varchar2(200) not null,
 accdate timestamp default sysdate,
 CONSTRAINT accid_fk FOREIGN KEY (accid) REFERENCES member(user_id)on delete cascade 
